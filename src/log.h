@@ -24,7 +24,7 @@ extern const char *log_level_strings[];
     } while (0);
 
 #define LOG_CRITICAL(fmt, ...) log(LOGLEVEL_CRITICAL, fmt, __VA_ARGS__)
-#define LOG_WARNING(fmt, ...) log(LOG_WARNING, fmt, __VA_ARGS__)
+#define LOG_WARNING(fmt, ...) log(LOGLEVEL_WARNING, fmt, __VA_ARGS__)
 #define LOG_INFO(fmt, ...) log(LOGLEVEL_INFO, fmt, __VA_ARGS__)
 #define LOG_DEBUG(fmt, ...) log(LOGLEVEL_DEBUG, fmt, __VA_ARGS__)
 
